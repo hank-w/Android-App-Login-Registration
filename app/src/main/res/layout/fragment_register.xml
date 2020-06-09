@@ -27,7 +27,7 @@
         android:textSize="17sp"
         android:fontFamily="@font/roboto_regular"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="30dp"/>
 
     <EditText
         android:id="@+id/et_name"
@@ -58,6 +58,20 @@
         android:textSize="15sp" />
 
     <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/user_type"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_regular"
+        android:inputType="text"
+        android:background="@drawable/et_custom"
+        android:textSize="15sp" />
+
+    <EditText
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -78,6 +92,7 @@
         android:hint="@string/re_type_password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
         android:padding="15dp"
         android:fontFamily="@font/roboto_regular"
         android:inputType="textPassword"
@@ -86,7 +101,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="-19dp"
         android:layout_weight="1">
 
         <Button
@@ -97,7 +112,8 @@
             android:fontFamily="@font/roboto_regular"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="0dp"
             android:layout_centerInParent="true"
             android:textColor="@android:color/white"
             android:text="@string/register"/>
@@ -105,6 +121,7 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_margin="-16dp"
             android:src="@drawable/ic_arrow_left"
             android:layout_above="@id/swipeLeft"
             android:layout_centerHorizontal="true"/>
